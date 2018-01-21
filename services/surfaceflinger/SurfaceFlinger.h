@@ -347,6 +347,7 @@ private:
     /* ------------------------------------------------------------------------
      * Extensions
      */
+#ifdef USE_HWC2
     virtual void updateExtendedMode() { }
 
     virtual void getIndexLOI(size_t /*dpy*/,
@@ -375,6 +376,7 @@ private:
                      const int32_t& /*id*/) { }
 
     virtual void updateVisibleRegionsDirty() { }
+#endif
     /* ------------------------------------------------------------------------
      * Message handling
      */
